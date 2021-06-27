@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 
 :root{
   --ltTeal: #01F4FA;
@@ -7,7 +8,10 @@
   --drkGrTl: #4C686A;
   --gray: #B7CCCE;
   --grTl: #D5EDEF;
-  --mainFont: 'IM Fell DW Pica SC', serif;;
+  --mainFont: 'IM Fell DW Pica SC', serif;
+  --subFont: 'Raleway', sans-serif;
+  --customCursor: url('./images/swCursor.png'), auto;
+  --redAccent: #810020;
 }
 
 
@@ -18,6 +22,7 @@
 body {
   margin: 0;
   font-family: var(--mainFont);
+  cursor: var(--customCursor);
 }
 
 

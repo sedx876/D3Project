@@ -1,11 +1,13 @@
 import React from 'react'
+import { BrowserRouter as Router } from 'react-router-dom'
+import MainRouter from './MainRouter'
 
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-     <h1>HELLO D3 PLAYERS!!!</h1>
-    </div>
+    <Router>
+      <MainRouter/>
+    </Router>
   );
 }
 
