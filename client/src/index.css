@@ -1,13 +1,23 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+DW+Pica+SC&display=swap');
+
+:root{
+  --ltTeal: #01F4FA;
+  --mdTeal: #00B5C3;
+  --drkTeal: #197A80;
+  --drkGrTl: #4C686A;
+  --gray: #B7CCCE;
+  --grTl: #D5EDEF;
+  --mainFont: 'IM Fell DW Pica SC', serif;;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+
+
+
+
+
+body {
+  margin: 0;
+  font-family: var(--mainFont);
 }
+
+
