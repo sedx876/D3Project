@@ -10,12 +10,12 @@ import { MobileNavLinks } from "./mobileNavLinks";
 const NavbarContainer = styled.div`
   width: 100%;
   height: 60px;
-  box-shadow: 0 1px 3px rgba(15, 15, 15, 0.13);
+  // box-shadow: 0 1px 3px rgba(15, 15, 15, 0.13);
   display: flex;
   align-items: center;
   color: #01F4FA;
   background-color: #000;
-  text-shadow: .25px .25px 0px pink;
+  text-shadow: 3px 3px 6px 5px #810020;
 `;
 
 const LeftSection = styled.div`

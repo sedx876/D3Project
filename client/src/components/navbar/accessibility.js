@@ -10,7 +10,7 @@ const RegisterButton = styled.button`
   border: 0;
   outline: 0;
   padding: 8px 1em;
-  color: #000;
+  color: #810020;
   font-size: 13px;
   font-weight: 600;
   border-radius: 20px;
@@ -40,7 +40,7 @@ const LoginButton = styled.button`
   border: 0;
   outline: 0;
   padding: 8px 1em;
-  color: #222;
+  color: #810020;
   font-size: 13px;
   font-weight: 600;
   border-radius: 20px;

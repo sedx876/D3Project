@@ -24,7 +24,7 @@ const LogoText = styled.h2`
   font-weight: 500;
   color: #01F4FA;
   background-color: #000;
-  text-shadow: 1px 1px 0px #ff0000;
+  text-shadow: 1px 1px 0px #810020;
   
 `;
 

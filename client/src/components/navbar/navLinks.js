@@ -32,12 +32,14 @@ const LinkItem = styled.li`
   &:hover {
     border-top: 2px solid #810020;
   }
+  text-shadow: 1px 1px 0px #810020;
 `;
 
 const Link = styled.a`
   text-decoration: none;
   color: inherit;
   font-size: inherit;
+  text-shadow: 1px 1px 0px #810020;
 `;
 
 export function NavLinks(props) {
