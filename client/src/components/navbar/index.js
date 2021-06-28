@@ -14,7 +14,7 @@ const NavbarContainer = styled.div`
   display: flex;
   align-items: center;
   color: #01F4FA;
-  background-color: #000;
+  background-color: #810020;
   text-shadow: 3px 3px 6px 5px #810020;
 `;
 
@@ -32,7 +32,7 @@ const MiddleSection = styled.div`
 const RightSection = styled.div`
   display: flex;
   width: 100%;
-  background-color: #000;
+  background-color: #810020;
   height: 60px;
   
 `;

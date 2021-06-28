@@ -4,7 +4,7 @@ import styled from "styled-components";
 const NavLinksContainer = styled.div`
   height: 100%;
   display: flex;
-  align-items: center;
+  justify-content: center;
   
 `;
 
@@ -15,17 +15,15 @@ const LinksWrapper = styled.ul`
   height: 100%;
   list-style: none;
   margin-left: 50px;
-  
+  justify-content: center;
 `;
 
 const LinkItem = styled.li`
   height: 100%;
-  margin: 5px;
-  padding: 0 .5em;
+  margin: 2px;
+  padding: 4px .5em;
   font-weight: 500;
-  font-size: 14px;
-  align-items: center;
-  justify-content: center;
+  font-size: 16px;
   display: flex;
   border-top: 2px solid transparent;
   transition: all 220ms ease-in-out;
@@ -51,7 +49,7 @@ export function NavLinks(props) {
         </LinkItem>
         {/* <LinkItem>||</LinkItem> */}
         <LinkItem>
-          <Link href="#">Gear Build</Link>
+          <Link href="#">Add a Build</Link>
         </LinkItem>
         {/* <LinkItem>||</LinkItem> */}
         <LinkItem>

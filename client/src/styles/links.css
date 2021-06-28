@@ -45,7 +45,7 @@
   font-size: 50px;
   font-weight: bolder;
   color: var(--redAccent);
-  text-shadow: 1px 1px 0px #003032;
+  text-shadow: 2px 2px #01F4FA;
   letter-spacing: 1px;
 }
 
@@ -54,6 +54,7 @@
   color: var(--redAccent);
   font-size: 15px;
   letter-spacing: 1px;
+  font-weight: bolder;
 }
 
 #barbLink{

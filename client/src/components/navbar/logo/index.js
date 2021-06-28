@@ -18,12 +18,12 @@ const LogoImg = styled.div`
 `;
 
 const LogoText = styled.h2`
-  font-size: 20px;
+  font-size: 25px;
   margin: 0;
   margin-left: 2px;
   font-weight: 500;
   color: #01F4FA;
-  background-color: #000;
+  background-color: #810020;
   text-shadow: 1px 1px 0px #810020;
   
 `;
