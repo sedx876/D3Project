@@ -34,7 +34,7 @@ export function Logo(props) {
       <LogoImg>
         <img src={D3} alt="Diablo2" />
       </LogoImg>
-      <LogoText>Diablo2PlayrPad</LogoText>
+      <LogoText>Diablo3PlayrPad</LogoText>
     </LogoWrapper>
   );
 }

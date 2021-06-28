@@ -4,6 +4,7 @@ import { Navbar } from './components/navbar'
 import Home from './components/core/Home.js'
 import About from './components/core/About.js'
 import Footer from './components/core/Footer'
+import Links from './components/core/Links'
 
 const MainRouter = () => {
   return (
@@ -12,6 +13,7 @@ const MainRouter = () => {
       <Switch>
         <Route exact path='/' component={Home}/>
         <Route path='/about' component={About}/>
+        <Route path='/links' component={Links}/>
       </Switch>
       <Footer/>
     </div>
