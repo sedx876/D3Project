@@ -42,7 +42,6 @@ export const getMyCharacters = () => {
         "Content-Type": "application/json"
       }
     })
-    .then(console.log(data))
     .then(r => r.json())
     .then(response => {
       if (response.error) {

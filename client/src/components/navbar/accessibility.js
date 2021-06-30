@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import {Link} from 'react-router-dom'
 
 const AccessibilityContainer = styled.div`
   display: flex;
@@ -99,8 +100,15 @@ const LogOutButton = styled.button`
 export function Accessibility(props) {
   return (
     <AccessibilityContainer>
-      <RegisterButton className=''>Register</RegisterButton>
-      <LoginButton className=''>Login</LoginButton>
+      <Link to="/signup">
+        <RegisterButton className=''>Register</RegisterButton>
+      </Link>
+
+      <Link to="/login">
+        <LoginButton className=''>Login</LoginButton>
+      </Link>
+      
+      
       <LogOutButton className=''>LogOut</LogOutButton>
     </AccessibilityContainer>
   );

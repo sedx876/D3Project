@@ -2,8 +2,14 @@ import { createStore, applyMiddleware, compose, combineReducers } from 'redux'
 import thunk from 'redux-thunk'
 import myCharacters from './reducers/myCharacters'
 import characterForm from './reducers/characterForm'
+import currentUser from './reducers/currentUser'
+import loginForm from './reducers/loginForm'
+import signupForm from './reducers/signupForm'
 
 const reducer = combineReducers({
+  currentUser,
+  loginForm,
+  signupForm,
   myCharacters,
   characterForm,
 })

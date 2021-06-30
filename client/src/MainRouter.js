@@ -8,17 +8,25 @@ import About from './components/core/About.js'
 import Footer from './components/core/Footer'
 import Links from './components/core/Links'
 import CharacterBuildContainer from './containers/CharacterBuildContainer'
+import { getCurrentUser } from "./actions/currentUser"
+import Signup from './components/Users/Signup'
 
 class MainRouter extends Component {
+  componentDidMount() {
+    this.props.getCurrentUser()
+  }
 
   render(){
+    const { loggedIn } = this.props
     return (
       <div>
+        {/* { loggedIn ? <Navbar /> : <Home />} */}
         <Navbar/>
         <Switch>
           <Route exact path='/' component={Home}/>
           <Route path='/about' component={About}/>
           <Route path='/links' component={Links}/>
+          <Route exact path='/signup' render={({history}) =><Signup history={history}/>}/>
         </Switch>
         <CharacterBuildContainer />
         {/* <Footer/> */}
@@ -28,4 +36,10 @@ class MainRouter extends Component {
   
 }
 
-export default MainRouter
+const mapStateToProps = state => {
+  return ({
+    loggedIn: !!state.currentUser,
+  })
+}
+
+export default withRouter(connect(mapStateToProps, {getCurrentUser})(MainRouter))
