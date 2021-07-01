@@ -1,0 +1,74 @@
+.navbarContainer{
+  width: 100%;
+  height: 60px;
+  box-shadow: 2px 1px 4px #810020;
+  display: flex;
+  align-items: center;
+  color: #01F4FA;
+  background-color: #810020;
+  text-shadow: 3px 3px 6px 5px #810020;
+}
+
+.logoWrapper{
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-size: 25px;
+  margin: 0;
+  margin-left: 2px;
+  font-weight: 500;
+  color: #01F4FA;
+  background-color: #810020;
+  text-shadow: 1px 1px 0px #810020;
+}
+
+.navLinksContainer{
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.linksWrapper{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  height: 100%;
+  list-style: none;
+  margin-left: 50px;
+  justify-content: center;
+}
+
+.linkItem{
+  height: 100%;
+  margin: 2px;
+  padding: 4px .5em;
+  font-weight: 500;
+  font-size: 16px;
+  display: flex;
+  /* border-top: 2px solid transparent;
+  transition: all 220ms ease-in-out; */
+  text-shadow: 1px 1px 0px #810020;
+}
+
+a:hover{
+  /* border-top: 2px solid #01F4FA; */
+} 
+
+a:link{
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+  text-shadow: 1px 1px 0px #810020;
+}
+
+a:visited{
+  text-decoration: none;
+  color: inherit;
+  font-size: inherit;
+  text-shadow: 1px 1px 0px #810020;
+}
+
+.logoImg{
+  width: 40px;
+  height: 40px;
+}

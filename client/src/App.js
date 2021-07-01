@@ -1,19 +1,46 @@
 import React, { Component } from 'react'
-import { BrowserRouter as Router } from 'react-router-dom'
-import MainRouter from './MainRouter'
+import CharacterBuildContainer from './containers/CharacterBuildContainer'
+// import Footer from './components/Footer'
+import { withRouter } from 'react-router-dom'
+import Navbar from './components/core/Navbar'
+import Home from './components/core/Home'
+import { connect } from 'react-redux';
+import { getCurrentUser } from "./actions/currentUser"
+import StaticContainer from './containers/StaticContainer'
 
 
-class App extends Component {
+export class App extends Component {
 
-  render(){
 
+  //componentDidMount is a lifecycle method runs after first render
+  //setting making sure we have a current user
+
+  componentDidMount() {
+    this.props.getCurrentUser()
+  }
+
+  render() {
+    const { loggedIn } = this.props
     return (
-      <Router>
-        <MainRouter/>
-      </Router>
+      <div>
+        { loggedIn ? <Navbar /> : <Home />}
+        <CharacterBuildContainer />
+        <StaticContainer/>
+        {/* <Footer /> */}
+      </div>
     )
   }
-  
 }
 
-export default App;
+
+//is used for selecting the part of the data from the store 
+//that the connected component needs. 
+
+const mapStateToProps = state => {
+  return ({
+    loggedIn: !!state.currentUser,
+  })
+}
+//withRouter is supplied by react-router-dom and gives access 
+//to props.history
+export default withRouter(connect(mapStateToProps, {getCurrentUser})(App))
