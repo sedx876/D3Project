@@ -36,7 +36,7 @@ export const addCharacter = character => {
 export const getMyCharacters = () => {
   return dispatch => {
     return fetch('http://localhost:3001/api/v1/characters', {
-      // credentials: 'include',
+      credentials: 'include',
       method: "GET",
       headers: {
         "Content-Type": "application/json"

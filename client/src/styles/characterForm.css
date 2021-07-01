@@ -1,0 +1,102 @@
+#newFormDiv{
+  display: flex;
+  justify-content: center;
+  flex-direction: row; /* row is default*/
+  flex-wrap: wrap;
+  margin-top: 10px;
+  font-family: var(--subFont);
+}
+
+input[type=text] {
+  border: 2px ridge #810020;
+  border-radius: 10px;
+  height: 20px;
+  width: 200px;
+  box-shadow: 2px 8px 16px 0 #197A80;
+  background-color: #810020;
+  color: white;
+  text-align: center;
+}
+
+#newFormInput{
+  margin: 5px;
+}
+
+textarea {
+  width: 35%;
+  height: 100px;
+  padding: 10px 20px;
+  /* box-sizing: border-box; */
+  border: 2px ridge #810020;
+  border-radius: 10px;
+  background-color: #810020;
+  resize: none;
+  color: white;
+  box-shadow: 2px 8px 16px 0 #197A80;
+}
+
+#stringInput{
+  display: flex;
+  justify-content: center;
+  flex-direction: row; /* row is default*/
+  flex-wrap: wrap;
+  margin-top: 10px;
+  font-family: var(--subFont);
+}
+
+#createBtn{
+  display: flex;
+  justify-content: center;
+  flex-direction: row; /* row is default*/
+  flex-wrap: wrap;
+  margin-top: 10px;
+  font-family: var(--subFont);
+}
+
+#icon{
+  position: relative;
+  top: 10px;
+  left: 5px;
+  color: #197A80;
+  width: 30px;
+  height: 30px;
+  margin-top: 20px;
+  /* padding-top: 20px;
+  margin-top: 10px; */
+}
+
+#inputDiv{
+  
+  border-radius: 10px;
+}
+
+#textDiv{
+  border-radius: 10px;
+}
+
+#textIcon{
+  position: relative;
+  /* top: 5px; */
+  left: 5px;
+  color: #197A80;
+  width: 30px;
+  height: 30px;
+  margin-top: 20px;
+  
+}
+
+#formTitle{
+  text-align: center;
+  color: var(--redAccent);
+  text-shadow: 1px 1px 0px #003032;
+  letter-spacing: 1px;
+}
+
+#formToggle{
+  display: flex;
+  justify-content: center;
+  flex-direction: row; /* row is default*/
+  flex-wrap: wrap;
+  margin-top: 10px;
+  font-family: var(--subFont);
+}
