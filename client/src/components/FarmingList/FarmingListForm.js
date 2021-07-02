@@ -1,6 +1,9 @@
 import React from 'react'
 import {connect} from 'react-redux'
 import {updateFarmingListForm} from '../../actions/farmingListForm'
+import '../../styles/farminglist.css'
+import Toggle from '../core/Toggle'
+
 
 
 
@@ -14,16 +17,18 @@ const FarmingListForm = ({ formData, updateFarmingListForm, handleSubmit, editMo
   }
 
   return (
-    <div className="card text-white bg-dark">
+    <Toggle>
+    <div className="todo-app">
       <form className="form-group col-sm-4"
       onSubmit={event => {
         event.preventDefault()
         handleSubmit(formData)
       }}>
-      <input className="form-control col-sm-8" onChange={handleChange} placeholder='Add Notes for Item' name='notes' value={notes} />
-      <input className="btn btn-outline-warning" type='submit' value={editMode ? 'Update Item' : 'Add Item'} />
+      <input className="todo-input" onChange={handleChange} placeholder='Add Notes for Item' name='notes' value={notes} />
+      <input className="todo-button" type='submit' value={editMode ? 'Update Item' : 'Add Item'} />
       </form>
     </div>
+    </Toggle>
   )
 }
 

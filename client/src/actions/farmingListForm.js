@@ -14,6 +14,7 @@ export const resetFarmingListForm = () => {
 
 export const setFarmingFormDataForEdit = item => {
   const itemFormData = {
+    name: item.attributes.name,
     notes: item.attributes.notes
   }
   return {

@@ -43,7 +43,7 @@ const CharacterForm = ({ formData, updateCharacterForm, handleSubmit, editMode }
     <h1 id='formTitle'>Add New Character</h1>
     
   <div id='newFormDiv'>
-  <Toggle id='formToggle' placeholder='New Character'>
+  <Toggle id='formToggle'>
    New Character
     <form
       onSubmit={event => {

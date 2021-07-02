@@ -7,6 +7,7 @@ import Home from './components/core/Home'
 import { connect } from 'react-redux';
 import { getCurrentUser } from "./actions/currentUser"
 import StaticContainer from './containers/StaticContainer'
+import FarmingListContainer from './containers/FarmingListContainer'
 
 
 export class App extends Component {
@@ -25,6 +26,7 @@ export class App extends Component {
       <div>
         { loggedIn ? <Navbar /> : <Home />}
         <CharacterBuildContainer />
+        <FarmingListContainer />
         <StaticContainer/>
         {/* <Footer /> */}
       </div>

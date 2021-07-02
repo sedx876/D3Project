@@ -58,6 +58,7 @@ export const getMyItems = () => {
 export const createItem = (itemData, history) => {
   return dispatch => {
     const sendableItemData = {
+      name: itemData.name,
       notes: itemData.notes,
       user_id: itemData.userId
     }
@@ -86,6 +87,7 @@ export const createItem = (itemData, history) => {
 export const updateItem = (itemData, history) => {
   return dispatch => {
     const sendableItemData = {
+      name: itemData.name,
       notes: itemData.notes
     }
     return fetch(`http://localhost:3001/api/v1/items/${itemData.itemId}`, {

@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import '../../styles/farminglist.css'
 
 
 const ItemCard = ({ item }) => {
@@ -7,10 +8,11 @@ const ItemCard = ({ item }) => {
 
   item ?
 
-    <div className="card border-dark mb-3">
+    <div className="">
       
-      <p className="card-text"><span>Notes:</span> {item.attributes.notes}</p>
-      <Link className="btn btn-outline-warning" to={`/items/${item.id}/edit`}>Edit or Delete this Item</Link>
+      <p className="todo-row"> {item.attributes.notes}</p>
+      <br/>
+      <Link className="todo-button" to={`/items/${item.id}/edit`}>Edit or Delete this Item</Link>
       </div>
     
     : 

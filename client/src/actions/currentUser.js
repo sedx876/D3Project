@@ -3,7 +3,6 @@ import { resetSignupForm } from './signupForm.js'
 import { getMyCharacters, clearCharacters } from './myCharacters.js'
 import { getMyItems, clearItems } from './myFarmingList'
 
-
 export const setCurrentUser = user => {
   return {
     type: "SET_CURRENT_USER",
