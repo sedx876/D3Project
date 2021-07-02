@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import '../../styles/toggle.css'
+import {BsFillPlusCircleFill} from "react-icons/bs"
 
 export default class Toggle extends Component {
   state = {
@@ -16,7 +17,7 @@ export default class Toggle extends Component {
     return (
       <div>
         <button id='toggleBtn' onClick={this.toggle}>
-          New Character Build</button>
+          <BsFillPlusCircleFill/></button>
         {this.state.on && this.props.children}
       </div>
     )
